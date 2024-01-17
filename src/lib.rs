@@ -12,5 +12,5 @@ pub fn expand_tilde(path: impl AsRef<std::path::Path>) -> Option<std::path::Path
     } else {
         p.to_path_buf()
     };
-    expanded.exists().then_some(expanded)
+    Some(expanded)
 }
