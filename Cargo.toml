@@ -3,7 +3,12 @@ name = "simple-expand-tilde"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT"
+repository = "https://github.com/splurf/simple-expand-tilde"
+authors = ["Evan Schwartzentruber <evandotschwartzentruber@gmail.com>"]
+description = "An extremely tiny and reliable Rust library that parses tilde expansion."
+keywords = ["expand", "tilde", "home", "directory", "path", "light", "expansion"]
+categories = ["accessibility"]
 
 [dependencies]
 simple-home-dir = "0.3"
