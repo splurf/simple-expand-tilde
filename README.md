@@ -8,8 +8,10 @@ An extremely tiny and reliable Rust library that parses [tilde expansion](https:
 use simple_expand_tilde::*;
 
 fn main() {
-    // Linux   => "/home/<USER>/.local"
-    let path = expand_tilde("~/.local").unwrap();
+    // Windows => "C:\Users\<USER>\.rustup"
+    // Linux   => "/home/<USER>/.rustuup"
+    // Mac     => "/Users/<USER>/.rustup"
+    let path = expand_tilde("~/.rustup").unwrap();
     println!("{:?}", path)
 }
 ```
