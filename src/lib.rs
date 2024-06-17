@@ -1,5 +1,7 @@
+use std::path::*;
+
 /// Expand the tilde (`~`) from within the provided path.
-pub fn expand_tilde(path: impl AsRef<std::path::Path>) -> Option<std::path::PathBuf> {
+pub fn expand_tilde(path: impl AsRef<Path>) -> Option<PathBuf> {
     let p = path.as_ref();
 
     let expanded = if p.starts_with("~") {
