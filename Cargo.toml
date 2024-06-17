@@ -1,17 +1,17 @@
 [package]
 name = "simple-expand-tilde"
-version = "0.1.6"
+version = "0.1.7"
 edition = "2021"
 
 license = "MIT"
 repository = "https://github.com/splurf/simple-expand-tilde"
 authors = ["Evan Schwartzentruber <evandotschwartzentruber@gmail.com>"]
-description = "An extremely tiny and reliable Rust library that parses tilde expansion."
-keywords = ["expand", "tilde", "home", "directory", "path"]
+description = "Cross-platform and reliable tilde-expansion solution."
+keywords = ["expand", "tilde", "fast", "path", "lightweight"]
 categories = ["accessibility"]
 
 [dependencies]
-simple-home-dir = "0.3.4"
+simple-home-dir = "0.3.5"
 
 [profile.release]
 lto = true
