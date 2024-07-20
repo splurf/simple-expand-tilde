@@ -1,17 +1,17 @@
 [package]
 name = "simple-expand-tilde"
-version = "0.1.8"
+version = "0.4.0"
 edition = "2021"
-
 license = "MIT"
 repository = "https://github.com/splurf/simple-expand-tilde"
 authors = ["Evan Schwartzentruber <evandotschwartzentruber@gmail.com>"]
 description = "Cross-platform and reliable tilde-expansion solution."
 keywords = ["expand", "tilde", "fast", "path", "lightweight"]
 categories = ["accessibility"]
+exclude = [".github/", ".gitignore", "LICENSE", "README.md", "tests/"]
 
 [dependencies]
-simple-home-dir = "0.3.6"
+simple-home-dir = "0.4.0"
 
 [profile.release]
 lto = true
