@@ -12,7 +12,8 @@ dependencies = [
 [[package]]
 name = "simple-home-dir"
 version = "0.4.7"
-source = "git+https://github.com/splurf/simple-home-dir#3f45def0ca0735473d8972f40f8aae81ec7b2a2c"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f1f78301e9c87e04e958ef735dd9de41df52b6d5eb94a0af0ba06b3101a4b974"
 dependencies = [
  "windows-sys",
 ]
