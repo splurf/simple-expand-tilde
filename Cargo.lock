@@ -4,16 +4,15 @@ version = 4
 
 [[package]]
 name = "simple-expand-tilde"
-version = "0.4.6"
+version = "0.4.7"
 dependencies = [
  "simple-home-dir",
 ]
 
 [[package]]
 name = "simple-home-dir"
-version = "0.4.6"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cd988c122a92006d24f347b3cbba965d5558e0ce94659fa7f0b6074e48641913"
+version = "0.4.7"
+source = "git+https://github.com/splurf/simple-home-dir#3f45def0ca0735473d8972f40f8aae81ec7b2a2c"
 dependencies = [
  "windows-sys",
 ]
