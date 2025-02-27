@@ -5,7 +5,8 @@ pub fn expand_tilde(path: impl AsRef<Path>) -> Option<PathBuf> {
     let p = path.as_ref();
 
     let expanded = if p.starts_with("~") {
-        let mut base = simple_home_dir::home_dir()?;
+        #[allow(deprecated)]
+        let mut base = std::env::home_dir()?;
 
         if !p.ends_with("~") {
             base.extend(p.components().skip(1));
